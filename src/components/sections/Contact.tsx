@@ -1,4 +1,4 @@
-// app/contact/page.tsx
+
 "use client";
 
 import { useEffect, useState } from "react";
@@ -10,7 +10,7 @@ import emailjs from "@emailjs/browser";
 import Image from "next/image";
 
 export default function Contact() {
-  // Form fields are empty for visitor to fill
+
   const [isSending, setIsSending] = useState(false);
 
   const [status, setStatus] = useState<
@@ -86,11 +86,12 @@ export default function Contact() {
         className="object-cover"
       />
 
-      {/* Subtle background glow */}
+
       <div className="absolute inset-0 bg-gradient-to-b from-black/95 via-black/90 to-black/90" />
-      {/* <div className="absolute inset-0 bg-gradient-to-b from-blue-500/5 via-transparent to-transparent" /> */}
+
 
       <div className="relative z-10 mx-auto max-w-5xl">
+
         {/* Section Header */}
         <div className="mb-12 text-center">
           <p className="text-sm font-light uppercase tracking-[0.3em] text-white/80">
@@ -107,9 +108,10 @@ export default function Contact() {
         </div>
 
         {/* Contact Card */}
+
         <div className="overflow-hidden rounded-[32px] border border-white/8 bg-white/[0.04] backdrop-blur-xl">
           <div className="grid grid-cols-1 gap-12 p-6 sm:p-8 md:grid-cols-5 md:gap-10 md:p-12">
-            {/* Left: Info (pre-filled with developer's details) */}
+
             <div className="flex h-full flex-col justify-between md:col-span-2">
               <div className="mb-8">
                 <p className="text-xs uppercase tracking-[0.35em] text-blue-400">
@@ -129,6 +131,7 @@ export default function Contact() {
               </div>
 
               <div className="space-y-4 mb-4">
+                
                 {/* Email */}
                 <div className="flex items-center gap-4 rounded-xl border border-white/8 bg-white/5 p-4 transition-all duration-300 hover:border-blue-500/30 hover:bg-white/8">
                   <div className="flex h-12 w-12 items-center justify-center rounded-full bg-blue-500/10 text-blue-400">
