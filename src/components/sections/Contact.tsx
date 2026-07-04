@@ -131,7 +131,7 @@ export default function Contact() {
               </div>
 
               <div className="space-y-4 mb-4">
-                
+
                 {/* Email */}
                 <div className="flex items-center gap-4 rounded-xl border border-white/8 bg-white/5 p-4 transition-all duration-300 hover:border-blue-500/30 hover:bg-white/8">
                   <div className="flex h-12 w-12 items-center justify-center rounded-full bg-blue-500/10 text-blue-400">
@@ -151,23 +151,26 @@ export default function Contact() {
                 </div>
 
                 {/* Phone */}
-                <div className="flex items-center gap-4 rounded-xl border border-white/10 bg-white/5 p-4 transition-all duration-300 hover:border-blue-500/30 hover:bg-white/8">
+                <a
+                  href="tel:+918368619855"
+                  className="block rounded-xl border border-white/10 bg-white/5 p-4 transition-all duration-300 hover:border-blue-500/30 hover:bg-white/8"
+                >
+                  <div className="flex items-center gap-4">
+                    <div className="flex h-12 w-12 items-center justify-center rounded-full bg-blue-500/10 text-blue-400">
+                      <FaPhoneAlt size={16} />
+                    </div>
 
-                  <div className="flex h-12 w-12 items-center justify-center rounded-full bg-blue-500/10 text-blue-400">
-                    <FaPhoneAlt size={16} />
+                    <div>
+                      <p className="text-xs uppercase tracking-wider text-white/40">
+                        Phone
+                      </p>
+
+                      <span className="text-sm text-white transition-colors hover:text-blue-400">
+                        +91 83686 19855
+                      </span>
+                    </div>
                   </div>
-                  <div>
-                    <p className="text-xs uppercase tracking-wider text-white/40">
-                      Phone
-                    </p>
-                    <a
-                      href="tel:+918368619855"
-                      className="text-sm text-white hover:text-blue-400"
-                    >
-                      +91 83686 19855
-                    </a>
-                  </div>
-                </div>
+                </a>
 
                 {/* location */}
                 <div className="flex items-center gap-4 rounded-xl border border-white/10 bg-white/5 p-4 transition-all duration-300 hover:border-blue-500/30 hover:bg-white/8">
