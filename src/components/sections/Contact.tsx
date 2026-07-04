@@ -177,20 +177,28 @@ export default function Contact() {
                 </a>
 
                 {/* location */}
-                <div className="flex items-center gap-4 rounded-xl border border-white/10 bg-white/5 p-4 transition-all duration-300 hover:border-blue-500/30 hover:bg-white/8">
-                  <div className="flex h-12 w-12 items-center justify-center rounded-full bg-blue-500/10 text-blue-400">
-                    <FaLocationDot size={18} />
-                  </div>
-                  <div>
-                    <p className="text-xs uppercase tracking-wider text-white/40">
-                      Location
-                    </p>
+                <a
+                  href="https://maps.app.goo.gl/yu6Xao7d4mRdQgnt9"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block rounded-xl border border-white/10 bg-white/5 p-4 transition-all duration-300 hover:border-blue-500/30 hover:bg-white/8"
+                >
+                  <div className="flex items-center gap-4">
+                    <div className="flex h-12 w-12 items-center justify-center rounded-full bg-blue-500/10 text-blue-400">
+                      <FaLocationDot size={18} />
+                    </div>
 
-                    <p className="text-sm text-white">
-                      New Delhi, India
-                    </p>
+                    <div>
+                      <p className="text-xs uppercase tracking-wider text-white/40">
+                        Location
+                      </p>
+
+                      <span className="text-sm text-white transition-colors hover:text-blue-400">
+                        New Delhi, India
+                      </span>
+                    </div>
                   </div>
-                </div>
+                </a>
               </div>
 
               {/* Social Icons */}
