@@ -133,22 +133,26 @@ export default function Contact() {
               <div className="space-y-4 mb-4">
 
                 {/* Email */}
-                <div className="flex items-center gap-4 rounded-xl border border-white/8 bg-white/5 p-4 transition-all duration-300 hover:border-blue-500/30 hover:bg-white/8">
-                  <div className="flex h-12 w-12 items-center justify-center rounded-full bg-blue-500/10 text-blue-400">
-                    <IoMdMail size={18} />
+                <a
+                  href="mailto:amitprajapati4353@gmail.com"
+                  className="block rounded-xl border border-white/8 bg-white/5 p-4 transition-all duration-300 hover:border-blue-500/30 hover:bg-white/8"
+                >
+                  <div className="flex items-center gap-4">
+                    <div className="flex h-12 w-12 items-center justify-center rounded-full bg-blue-500/10 text-blue-400">
+                      <IoMdMail size={18} />
+                    </div>
+
+                    <div>
+                      <p className="text-xs uppercase tracking-wider text-white/40">
+                        Email
+                      </p>
+
+                      <span className="text-sm text-white transition-colors hover:text-blue-400">
+                        amitprajapati4353@gmail.com
+                      </span>
+                    </div>
                   </div>
-                  <div>
-                    <p className="text-xs uppercase tracking-wider text-white/40">
-                      Email
-                    </p>
-                    <a
-                      href="mailto:amitprajapati4353@gmail.com"
-                      className="text-sm text-white hover:text-blue-400"
-                    >
-                      amitprajapati4353@gmail.com
-                    </a>
-                  </div>
-                </div>
+                </a>
 
                 {/* Phone */}
                 <a
